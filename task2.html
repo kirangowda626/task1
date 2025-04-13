@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Creative Agency Landing Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: #333;
+    }
+
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      background: #f57c00;
+      color: white;
+      padding: 10px 30px;
+      font-size: 14px;
+    }
+
+    .top-buttons .btn {
+      background: #e91e63;
+      color: white;
+      padding: 6px 15px;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 30px;
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: url('https://via.placeholder.com/1200x500') center/cover no-repeat;
+      color: white;
+      padding: 100px 30px;
+      text-align: center;
+    }
+
+    .hero .btn {
+      margin: 10px;
+      padding: 10px 20px;
+      border: none;
+      color: white;
+      background: #ff4081;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .btn-secondary {
+      background: #009688;
+    }
+
+    .features {
+      display: flex;
+      justify-content: space-around;
+      padding: 40px 20px;
+      background: linear-gradient(to right, #ff6f61, #f06292);
+      color: white;
+    }
+
+    .features .feature {
+      text-align: center;
+      max-width: 200px;
+    }
+
+    .about {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 60px 30px;
+      background: #f1f1f1;
+    }
+
+    .about img {
+      width: 40%;
+      border-radius: 8px;
+      min-width: 250px;
+    }
+
+    .about-text {
+      width: 50%;
+      min-width: 300px;
+      padding: 10px;
+    }
+
+    .about .btn {
+      display: inline-block;
+      margin-top: 10px;
+      background: #e91e63;
+      color: white;
+      padding: 8px 15px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .services {
+      padding: 40px 30px;
+      text-align: center;
+      background: #fff;
+    }
+
+    .service-boxes {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-top: 30px;
+    }
+
+    .service {
+      width: 30%;
+      min-width: 250px;
+      margin: 10px;
+    }
+
+    .service img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background: #212121;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .features,
+      .service-boxes {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .about {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .about img,
+      .about-text {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="contact-info">
+      <span>📞 +123-456-7890</span>
+      <span>✉️ demo@landingpage.com</span>
+    </div>
+    <div class="top-buttons">
+      <a href="#" class="btn">Request a Consult</a>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">🌟 LANDING PAGE</div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Page</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Testimonials</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-text">
+      <h1>Creative Digital Agency</h1>
+      <p>We are creative minds building beautiful experiences.</p>
+      <a href="#" class="btn">Read More</a>
+      <a href="#" class="btn btn-secondary">Request a Consult</a>
+    </div>
+  </header>
+
+  <!-- Features -->
+  <section class="features">
+    <div class="feature">
+      <h3>🚀 Launch Business</h3>
+      <p>Get started with your idea today.</p>
+    </div>
+    <div class="feature">
+      <h3>💬 Online Support</h3>
+      <p>24/7 support from our team.</p>
+    </div>
+    <div class="feature">
+      <h3>⏱ Time Management</h3>
+      <p>Deliver projects on time, every time.</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about">
+    <div class="about-text">
+      <h2>About Us</h2>
+      <p>
+        15 years, we’re passionate about achieving better results for our clients. We help brands grow, innovate and transform through our strategic services and creative talent.
+      </p>
+      <a href="#" class="btn">Read More</a>
+    </div>
+    <img src="https://via.placeholder.com/400x300" alt="About Us">
+  </section>
+
+  <!-- Services -->
+  <section class="services">
+    <h2>Our Services</h2>
+    <div class="service-boxes">
+      <div class="service">
+        <img src="https://via.placeholder.com/300x200" alt="UX" />
+        <h4>User Experience</h4>
+      </div>
+      <div class="service">
+        <img src="https://via.placeholder.com/300x200" alt="Design" />
+        <h4>Creative Design</h4>
+      </div>
+      <div class="service">
+        <img src="https://via.placeholder.com/300x200" alt="Ready" />
+        <h4>Retina Ready</h4>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Creative Agency. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
